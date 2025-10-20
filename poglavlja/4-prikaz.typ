@@ -36,14 +36,8 @@
     grid(
         columns: (1fr, 1fr),
         gutter: 12pt,
-
-        figure(
-            image("../slike/scan_window.png", width: 95%),
-        ),
-
-        figure(
-            image("../slike/scan_window2.png", width: 95%),
-        )
+        image("../slike/scan_window.png", width: 95%),
+        image("../slike/scan_window2.png", width: 95%),
     ),
     caption: [Примери екрана скенера за одобрен и одбијен приступ члану]
 )<fig:skener>
@@ -135,14 +129,8 @@
     grid(
         columns: (1fr, 1fr),
         gutter: 12pt,
-
-        figure(
-            image("../slike/settings1.png", width: 95%),
-        ),
-
-        figure(
-            image("../slike/settings2.png", width: 95%),
-        )
+        image("../slike/settings1.png", width: 95%),
+        image("../slike/settings2.png", width: 95%),
     ),
     caption: [Екран за подешавањe апликације]
 )<fig:podesavanja>
