@@ -69,13 +69,13 @@
 #include "poglavlja/2-projektovanje.typ"
 #include "poglavlja/3-implementacija.typ"
 #include "poglavlja/4-prikaz.typ"
-#include "poglavlja/7-zakljucak.typ"
+#include "poglavlja/5-zakljucak.typ"
 
 
 
 #outline(title: "Списак слика", target: figure.where(kind: image))
-#outline(title: "Списак листинга", target: figure.where(kind: raw))
-#outline(title: "Списак табела", target: figure.where(kind: table))
+// #outline(title: "Списак листинга", target: figure.where(kind: raw))
+// #outline(title: "Списак табела", target: figure.where(kind: table))
 
 #set heading(numbering: none)
 #include "biografija.typ"
