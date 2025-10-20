@@ -3,7 +3,7 @@
 #let autor = "Данило Цвијетић"
 
 // На енглеском
-#let naslov_eng = "Gym Management System"
+#let naslov_eng = "Architecture and Implementation of a Gym Management System"
 #let autor_eng = "Danilo Cvijetić"
 
 #let indeks = "SV25/2021"
@@ -23,9 +23,9 @@
 
 // FIXME: Аутоматизовати бројање цитата и прилога
 // За сада унети ручно број референци из поглавља Литература.
-#let broj_citata = 4
+#let broj_citata = 18
 // Такође унети ручно и број прилога.
-#let broj_priloga = 0
+#let broj_priloga = 23
 
 #let kljucne_reci = "Шаблон, завршни рад, упутство"
 #let apstrakt = [
