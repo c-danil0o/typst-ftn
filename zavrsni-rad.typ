@@ -78,7 +78,7 @@
 #set heading(numbering: none)
 #show outline: set heading(outlined: true)
 #outline(title: "Списак слика", target: figure.where(kind: image))
-#outline(title: "Списак табела", target: figure.where(kind: table))
+// #outline(title: "Списак табела", target: figure.where(kind: table))
 
 
 #show figure: it => {
