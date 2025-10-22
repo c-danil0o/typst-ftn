@@ -22,6 +22,7 @@
 #show link: set text(blue)
 #show cite: set text(blue)
 #show ref: set text(blue)
+#show heading: set text(hyphenate: false)
 
 #show figure.where(
   kind: table
@@ -33,15 +34,16 @@
 #import "@preview/hydra:0.6.2": hydra
 
 #show heading.where(level: 1): (it) => {
-      pagebreak(to: "odd", weak: true)
-      set block(spacing: 8pt)
-      if heading.numbering != none {
-          text("Глава " + counter(heading).display(), size: 22pt)
-      }
-      line(length: 100%)
-      rect(align(right + horizon, text(it.body, size: 22pt)), fill: white, width: 100%)
-      line(length: 100%)
-      v(1em)
+    pagebreak(to: "odd", weak: true)
+    set block(spacing: 8pt)
+    if heading.numbering != none {
+        text("Глава " + counter(heading).display(), size: 22pt)
+    }
+    set par(justify: false)
+    line(length: 100%)
+    rect(align(right + horizon, text(it.body, size: 22pt)), fill: white, width: 100%)
+    line(length: 100%)
+    v(1em)
 }
 
 #outline(title: [Садржај], depth: 2)
@@ -70,14 +72,30 @@
 #include "poglavlja/3-implementacija.typ"
 #include "poglavlja/4-prikaz.typ"
 #include "poglavlja/5-zakljucak.typ"
-#include "poglavlja/6-pojmovi.typ"
 
 
 
+#set heading(numbering: none)
+#show outline: set heading(outlined: true)
 #outline(title: "Списак слика", target: figure.where(kind: image))
 #outline(title: "Списак табела", target: figure.where(kind: table))
 
-#set heading(numbering: none)
+
+#show figure: it => {
+    set text(size: 9pt)
+    set block(breakable: true)
+    set table(
+        columns: (1fr, 4fr),
+        align: left,
+        inset: 8pt,
+        stroke: 0pt)
+    it
+}
+
+// TODO: Додаци - искоментарисати ако се не користе
+#include "poglavlja/dodatak 1 - skracenice.typ"
+#include "poglavlja/dodatak 2 - pojmovi.typ"
+
 #include "biografija.typ"
 
 #bibliography(title: [Литература], "literatura.bib")
