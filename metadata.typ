@@ -1,9 +1,9 @@
 #let format_strane = "iso-b5"         // могуће вредности: iso-b5, a4
-#let naslov = "Развој и имплементација система за управљање теретаном"
+#let naslov = "Дизајн и имплементација система за управљање теретанама"
 #let autor = "Данило Цвијетић"
 
 // На енглеском
-#let naslov_eng = "Architecture and Implementation of a Gym Management System"
+#let naslov_eng = "Design and Implementation of a Gym Management System"
 #let autor_eng = "Danilo Cvijetić"
 
 #let indeks = "SV25/2021"
@@ -25,8 +25,9 @@
 // За сада унети ручно број референци из поглавља Литература.
 #let broj_citata = 18
 // Такође унети ручно и број прилога.
-#let broj_priloga = 23
+#let broj_priloga = 2
 
+// Попунити кључне речи и апстракт и не српском и на енглеском!
 #let kljucne_reci = "Шаблон, завршни рад, упутство"
 #let apstrakt = [
      Овај документ представља упутство за писање завршних радова на Факултету
@@ -43,20 +44,27 @@
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
 #let zadatak = [
-     #lorem(100)
+    Дизајнирати и имплементирати систем за управљање теретанама. Систем треба да
+    буде реализован као десктоп апликација која омогућава рад без интернет
+    конекције. Такође, треба имплементирати мобилну апликацију за кориснике теретане
+    која ће податке преузимати из онлајн базе која се аутоматски синхронизује са
+    радном базом десктоп апликације.
+
+    У изради користити препоручену праксу из области софтверског инжењерства.
+    Детаљно документовати решење.
 ]
 
 // Одбрана
-#let datum_odbrane = "01.01.2025"
+#let datum_odbrane = "27.10.2025"
 // Комисија
-#let komisija_predsednik = "Петар Петровић"
-#let komisija_predsednik_zvanje = "ванредни професор"
-#let komisija_clan = "Марко Марковић"
-#let komisija_clan_zvanje = "доцент"
+#let komisija_predsednik = "Бранко Милосављевић"
+#let komisija_predsednik_zvanje = "редовни професор"
+#let komisija_clan = "Мирослав Зарић"
+#let komisija_clan_zvanje = "редовни професор"
 
 // На енглеском уписати чланове на латиници
-#let komisija_predsednik_eng = "Petar Petrović"
-#let komisija_clan_eng = "Marko Marković"
+#let komisija_predsednik_eng = "Branko Milosavljević"
+#let komisija_clan_eng = "Miroslav Zarić"
 #let mentor_eng = "Igor Dejanović"
 
 
