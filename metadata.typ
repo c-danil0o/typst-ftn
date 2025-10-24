@@ -28,14 +28,35 @@
 #let broj_priloga = 2
 
 // Попунити кључне речи и апстракт и не српском и на енглеском!
-#let kljucne_reci = "Шаблон, завршни рад, упутство"
+#let kljucne_reci = "
+    Систем за управљање теретаном,
+    Offline-first архитектура,
+    Cross-platform,
+    Tauri,
+    Flutter,
+    Supabase,
+    Асинхрона синхронизација
+"
 #let apstrakt = [
-     Овај документ представља упутство за писање завршних радова на Факултету
-     техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
+    Овај рад описује пројектовање и имплементацију _GymMan_, хибридног
+    система за управљање фитнес центрима. Решење комбинује "offline-first"
+    десктоп апликацију (Tauri, SvelteKit) са мобилном апликацијом за чланове
+    (Flutter). Кључни део рада је имплементација робусног механизма за
+    асинхрону синхронизацију података између локалне SQLite базе и централне
+    базе на Supabase платформи, уз примену Row-Level Security полиса за
+    контролу приступа.
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "Template, thesis, tutorial"
+#let kljucne_reci_eng = "
+    Gym Management System,
+    Offline-first Architecture,
+    Cross-platform,
+    Tauri,
+    Flutter,
+    Supabase,
+    Asynchronous Synchronization
+"
 #let apstrakt_eng = [
      This document provides guidelines for writing final theses at the Faculty
      of Technical Sciences, University of Novi Sad. At the same time, it serves
@@ -55,7 +76,7 @@
 ]
 
 // Одбрана
-#let datum_odbrane = "27.10.2025"
+#let datum_odbrane = "28.10.2025"
 // Комисија
 #let komisija_predsednik = "Бранко Милосављевић"
 #let komisija_predsednik_zvanje = "редовни професор"
