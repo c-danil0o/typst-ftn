@@ -28,15 +28,7 @@
 #let broj_priloga = 2
 
 // Попунити кључне речи и апстракт и не српском и на енглеском!
-#let kljucne_reci = "
-    Систем за управљање теретаном,
-    Offline-first архитектура,
-    Cross-platform,
-    Tauri,
-    Flutter,
-    Supabase,
-    Асинхрона синхронизација
-"
+#let kljucne_reci = "Систем за управљање теретаном, Offline-first архитектура, Cross-platform, Tauri, Flutter, Supabase, Асинхрона синхронизација"
 #let apstrakt = [
     Овај рад описује пројектовање и имплементацију _GymMan_, хибридног
     система за управљање фитнес центрима. Решење комбинује "offline-first"
@@ -48,19 +40,15 @@
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "
-    Gym Management System,
-    Offline-first Architecture,
-    Cross-platform,
-    Tauri,
-    Flutter,
-    Supabase,
-    Asynchronous Synchronization
-"
+#let kljucne_reci_eng = "Gym Management System, Offline-first Architecture, Cross-platform, Tauri, Flutter, Supabase, Asynchronous Synchronization"
 #let apstrakt_eng = [
-     This document provides guidelines for writing final theses at the Faculty
-     of Technical Sciences, University of Novi Sad. At the same time, it serves
-     as a Typst template.
+    This thesis describes the design and implementation of _GymMan_, a hybrid
+    gym management system. The solution combines an offline-first desktop
+    application (Tauri, SvelteKit) with a mobile application for members
+    (Flutter). A key part of the work is the implementation of a robust
+    asynchronous data synchronization mechanism between a local SQLite database
+    and a central database on the Supabase platform, utilizing Row-Level
+    Security policies for access control.
 ]
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
